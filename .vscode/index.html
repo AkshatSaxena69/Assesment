@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApexDigital | Web Development & Digital Solutions</title>
+  <meta name="description" content="We build high-performance, responsive websites and modern digital products for modern brands.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-wrap">
+      <a href="#hero" class="brand">Apex<span>Digital</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#services" class="link">Services</a>
+        <a href="#about" class="link">About</a>
+        <a href="#benefits" class="link">Why Us</a>
+        <a href="#contact" class="link">Contact</a>
+        <div class="mobile-cta">
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        </div>
+      </nav>
+
+      <div class="nav-right">
+        <a href="#contact" class="btn btn-primary hide-mobile">Get in Touch</a>
+        <button class="burger" id="burgerBtn" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-layout">
+        <div class="hero-left">
+          <span class="tag">Digital Engineering Studio</span>
+          <h1>Crafting fast, resilient web products that convert.</h1>
+          <p class="hero-text">
+            We help ambitious businesses plan, design, and engineer responsive web applications built for speed, clean UX, and long-term scalability.
+          </p>
+          <div class="hero-btns">
+            <a href="#contact" class="btn btn-primary">Start a Project</a>
+            <a href="#services" class="btn btn-outline">Our Services</a>
+          </div>
+          <div class="hero-metrics">
+            <div>
+              <strong>99.9%</strong>
+              <span>Target Uptime</span>
+            </div>
+            <div>
+              <strong>250+</strong>
+              <span>Projects Shipped</span>
+            </div>
+            <div>
+              <strong>4.9/5</strong>
+              <span>Client Rating</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="code-card">
+            <div class="code-head">
+              <span class="dot d-red"></span>
+              <span class="dot d-yellow"></span>
+              <span class="dot d-green"></span>
+              <span class="file-name">app.config.ts</span>
+            </div>
+            <pre><code>import { createPlatform } from '@apex/core';
+
+export const app = createPlatform({
+  speed: 'instant',
+  responsive: true,
+  seoOptimized: true,
+  accessibility: 'AA+'
+});
+
+app.deploy();</code></pre>
+            <div class="score-chip">
+              <span class="score-icon">⚡</span>
+              <div>
+                <p class="score-title">PageSpeed Score</p>
+                <p class="score-val">100 / 100 Optimized</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services section-gap" id="services">
+      <div class="container">
+        <div class="head-center">
+          <span class="tag">What We Do</span>
+          <h2>Tailored technical services for your business</h2>
+          <p>Everything needed to build, polish, and deploy modern digital experiences.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="card service-card">
+            <div class="icon">💻</div>
+            <h3>Frontend Development</h3>
+            <p>Single page apps, headless setups, and modular components built with performant modern tools.</p>
+            <a href="#contact" class="card-link">Learn more &rarr;</a>
+          </div>
+
+          <div class="card service-card">
+            <div class="icon">📱</div>
+            <h3>Responsive UI/UX</h3>
+            <p>Clean design systems and pixel-perfect layouts that look balanced across mobile, tablet, and wide desktop screens.</p>
+            <a href="#contact" class="card-link">Learn more &rarr;</a>
+          </div>
+
+          <div class="card service-card">
+            <div class="icon">🚀</div>
+            <h3>Performance &amp; Core Web Vitals</h3>
+            <p>Comprehensive audits, image optimizations, and script refactoring to lower bounce rate and rank higher.</p>
+            <a href="#contact" class="card-link">Learn more &rarr;</a>
+          </div>
+
+          <div class="card service-card">
+            <div class="icon">🔒</div>
+            <h3>API &amp; CMS Integration</h3>
+            <p>Connecting your frontend cleanly to headless CMS backends, payment gateways, and custom REST APIs.</p>
+            <a href="#contact" class="card-link">Learn more &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section-gap" id="about">
+      <div class="container about-layout">
+        <div class="about-left">
+          <div class="photo-placeholder">
+            <div class="badge-float">
+              <strong>8+ Years</strong>
+              <span>delivering production software</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <span class="tag">About Us</span>
+          <h2>We prioritize solid code quality over unnecessary bloat.</h2>
+          <p class="lead">
+            Good development is about building clean interfaces that load instantly and are straightforward to maintain down the road.
+          </p>
+          <p>
+            We focus on semantic markup, accessible HTML structures, and responsive styles that scale naturally. Every line of CSS and JS is written with a specific purpose.
+          </p>
+          <ul class="check-list">
+            <li>Cross-browser tested (Chrome, Safari, Firefox, Edge)</li>
+            <li>Accessible forms, typography, and contrast</li>
+            <li>No heavy library dependencies for basic UI tasks</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits / Why Choose Us -->
+    <section class="benefits section-gap" id="benefits">
+      <div class="container">
+        <div class="head-center">
+          <span class="tag">Why Us</span>
+          <h2>The standard we bring to every sprint</h2>
+          <p>Practical results focused on reliability and user experience.</p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-box">
+            <span class="num">01</span>
+            <h3>Design Accuracy</h3>
+            <p>We honor typography specs, grid rules, and responsive padding directly from your Figma files.</p>
+          </div>
+
+          <div class="benefit-box">
+            <span class="num">02</span>
+            <h3>Fast Load Times</h3>
+            <p>Proper asset sizing, zero render-blocking scripts, and clean minification for smooth paint times.</p>
+          </div>
+
+          <div class="benefit-box">
+            <span class="num">03</span>
+            <h3>Mobile-First Layouts</h3>
+            <p>Fluid layouts engineered from small viewports up, avoiding awkward desktop-only regressions.</p>
+          </div>
+
+          <div class="benefit-box">
+            <span class="num">04</span>
+            <h3>Clean Codebase</h3>
+            <p>Organized stylesheets, readable naming patterns, and easy handoff documentation for your team.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-banner">
+      <div class="container">
+        <div class="banner-inner">
+          <div class="banner-info">
+            <h2>Ready to kick off your next project?</h2>
+            <p>Let's talk through your design specs, technical goals, and rollout timeline.</p>
+          </div>
+          <div class="banner-action">
+            <a href="#contact" class="btn btn-white">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact section-gap" id="contact">
+      <div class="container contact-layout">
+        <div class="contact-text">
+          <span class="tag">Contact</span>
+          <h2>Let's build something great together</h2>
+          <p class="contact-desc">
+            Fill out the form with your project details and our team will get back to you within 24 hours.
+          </p>
+
+          <div class="contact-info">
+            <div class="info-row">
+              <span class="icon">✉️</span>
+              <div>
+                <span class="label">Email</span>
+                <p>contact@apexdigital.dev</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <span class="icon">📍</span>
+              <div>
+                <span class="label">Location</span>
+                <p>Tech Park Tower 3, Suite 210</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-wrapper">
+          <form id="contactForm" novalidate>
+            <div class="form-field">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" placeholder="John Doe">
+              <span class="err-text" id="nameErr"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Work Email *</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com">
+              <span class="err-text" id="emailErr"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="dev">Web Development</option>
+                <option value="ui">Responsive UI/UX</option>
+                <option value="perf">Performance Optimization</option>
+                <option value="other">General Consulting</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Project Brief *</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about the scope, timeline, and deliverables..."></textarea>
+              <span class="err-text" id="msgErr"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">Send Message</button>
+            <div class="form-msg" id="formMsg"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-layout">
+      <div class="footer-about">
+        <a href="#hero" class="brand footer-brand">Apex<span>Digital</span></a>
+        <p>Building reliable, maintainable, and high-converting web experiences for modern businesses.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#benefits">Why Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Web Apps</a></li>
+          <li><a href="#services">Responsive Redesign</a></li>
+          <li><a href="#services">Speed Optimization</a></li>
+          <li><a href="#services">CMS Integration</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-copy">
+      <p>&copy; <span id="year"></span> ApexDigital. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
